@@ -24,7 +24,7 @@ jobs:
     #   run: npm test
 
     - name: Build Docker image
-      run: docker build -t your-image-name .
+      run: docker build -t test .
 
     - name: Run Docker container
-      run: docker run your-image-name npm test
+      run: docker run test npm test
