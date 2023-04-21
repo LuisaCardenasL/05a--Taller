@@ -6,10 +6,10 @@ test('sums two numbers', () => {
   expect(sum(1, 2)).toBe(3);
 });
 
-test('mul two numbers', () => {
-  expect(mul(1, 2)).toBe(2);
-});
-
 test('res two numbers', () => {
   expect(res(4, 2)).toBe(2);
+});
+
+test('mul two numbers', () => {
+  expect(mul(1, 2)).toBe(2);
 });
