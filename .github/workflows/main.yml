@@ -20,5 +20,11 @@ jobs:
     - name: Install dependencies
       run: npm i
 
-    - name: Run tests
-      run: npm test
+    # - name: Run tests
+    #   run: npm test
+
+    - name: Build Docker image
+      run: docker build -t your-image-name .
+
+    - name: Run Docker container
+      run: docker run your-image-name npm test
